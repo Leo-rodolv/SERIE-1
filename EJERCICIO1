@@ -1,0 +1,29 @@
+#include <stdio.h>
+int main ()
+{
+    int i,j,k;
+    printf("Ingresa 3 numeros");
+    scanf("%i %i %i",&i,&j,&k);
+    if (i + j > k && i + k > j && j + k > i) 
+    {
+        // Comprobar el tipo de triángulo
+        if (i == j && j == k) 
+        {
+            printf("Los valores forman un triángulo equilátero.\n");
+        } 
+        else if (i == j || i == k || j == k) 
+        {
+            printf("Los valores forman un triángulo isósceles.\n");
+        } 
+        else 
+        {
+            printf("Los valores forman un triángulo escaleno.\n");
+        }
+    } 
+    else 
+    {
+        printf("Los valores no forman un triángulo.\n");
+    }
+
+    return 0;
+}
