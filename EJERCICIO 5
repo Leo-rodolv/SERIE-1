@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() 
+    {
+        double suma = 0.0;
+        double numerador = 1.0;
+        double denominador = 5.0;
+        double multiplicador = 1.0;
+        int i = 1; //contador
+
+        while (i <= 8) {
+        suma += (numerador / denominador) * multiplicador;
+        numerador++;
+        multiplicador *= 2.0;
+        i++;
+    }
+
+    printf("La suma de los primeros 8 elementos de la serie es: %.2f\n", suma);
+
+    return 0;
+}
