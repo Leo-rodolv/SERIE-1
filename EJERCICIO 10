@@ -1,0 +1,27 @@
+#include <stdio.h>
+int main() 
+{ //NO ME SALIO :(
+    int cantidad;
+    printf("Ingrese la cantidad de elementos de la serie de Fibonacci que desea obtener: ");
+    scanf("%d", &cantidad);
+
+    void fibonaccih(int valor)
+    {
+        int fib1 = 0;
+        int fib2 = 1;
+        int fib3;
+        int contador = 0;
+
+        printf("Los primeros %d elementos de la serie de Fibonacci son:\n", valor);
+
+        while (contador < valor) 
+        {
+            printf("%d, ", fib1);
+            fib3 = fib1 + fib2;
+            fib1 = fib2;
+            fib2 = fib3;
+            contador++;
+        }
+        printf("\n");
+    }
+}
