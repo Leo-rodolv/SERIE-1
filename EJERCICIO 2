@@ -1,0 +1,90 @@
+//hecho por ia ya que no sabia como hacerlo :(
+#include <stdio.h>
+
+int main() {
+    int dia, mes;
+
+    // Solicitar al usuario la fecha de nacimiento
+    printf("Ingrese su fecha de nacimiento (dd mm): ");
+    scanf("%i %i", &dia, &mes);
+
+    // Determinar el signo del zodíaco
+    switch(mes) {
+        case 1: // Enero
+            if (dia <= 20)
+                printf("Tu signo del zodiaco es Capricornio.\n");
+            else
+                printf("Tu signo del zodiaco es Acuario.\n");
+            break;
+        case 2: // Febrero
+            if (dia <= 19)
+                printf("Tu signo del zodiaco es Acuario.\n");
+            else
+                printf("Tu signo del zodiaco es Piscis.\n");
+            break;
+        case 3: // Marzo
+            if (dia <= 20)
+                printf("Tu signo del zodiaco es Piscis.\n");
+            else
+                printf("Tu signo del zodiaco es Aries.\n");
+            break;
+        case 4: // Abril
+            if (dia <= 20)
+                printf("Tu signo del zodiaco es Aries.\n");
+            else
+                printf("Tu signo del zodiaco es Tauro.\n");
+            break;
+        case 5: // Mayo
+            if (dia <= 21)
+                printf("Tu signo del zodiaco es Tauro.\n");
+            else
+                printf("Tu signo del zodiaco es Géminis.\n");
+            break;
+        case 6: // Junio
+            if (dia <= 21)
+                printf("Tu signo del zodiaco es Géminis.\n");
+            else
+                printf("Tu signo del zodiaco es Cáncer.\n");
+            break;
+        case 7: // Julio
+            if (dia <= 22)
+                printf("Tu signo del zodiaco es Cáncer.\n");
+            else
+                printf("Tu signo del zodiaco es Leo.\n");
+            break;
+        case 8: // Agosto
+            if (dia <= 22)
+                printf("Tu signo del zodiaco es Leo.\n");
+            else
+                printf("Tu signo del zodiaco es Virgo.\n");
+            break;
+        case 9: // Septiembre
+            if (dia <= 22)
+                printf("Tu signo del zodiaco es Virgo.\n");
+            else
+                printf("Tu signo del zodiaco es Libra.\n");
+            break;
+        case 10: // Octubre
+            if (dia <= 22)
+                printf("Tu signo del zodiaco es Libra.\n");
+            else
+                printf("Tu signo del zodiaco es Escorpio.\n");
+            break;
+        case 11: // Noviembre
+            if (dia <= 21)
+                printf("Tu signo del zodiaco es Escorpio.\n");
+            else
+                printf("Tu signo del zodiaco es Sagitario.\n");
+            break;
+        case 12: // Diciembre
+            if (dia <= 21)
+                printf("Tu signo del zodiaco es Sagitario.\n");
+            else
+                printf("Tu signo del zodiaco es Capricornio.\n");
+            break;
+        default:
+            printf("Mes inválido.\n");
+    }
+
+    return 0;
+}
